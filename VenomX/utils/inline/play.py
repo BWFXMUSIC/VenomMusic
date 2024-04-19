@@ -99,10 +99,10 @@ def stream_markup(_, chat_id):
             ],
         [
             InlineKeyboardButton(
-                text="🥀 ᴏᴡɴᴇʀ 🥀", url=f"tg://openmessage?user_id={OWNER_ID}",
+                text="🥀 ᴏᴡɴᴇʀ 🥀", url=f"https://t.me/L2R_KING"),
             ),
             InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ 🥀", url=SUPPORT_CHAT,
+                text="🥀 sᴜᴩᴩᴏʀᴛ 🥀", url=f"https://t.me/L2R_KING"),
             )
             InlineKeyboardButton(
                 text="🥀 sᴜᴩᴩᴏʀᴛ 🥀", url=f"https://t.me/L2R_KING"),
