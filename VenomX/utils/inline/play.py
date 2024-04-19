@@ -10,20 +10,19 @@ def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["P_B_2"],
-                callback_data=f"MusicStream {videoid}|{user_id}|a|{channel}|{fplay}",
+                text="🌼 ᴘʟᴀʏʟɪsᴛs",
+                text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/Apjijann"
             ),
             InlineKeyboardButton(
-                text=_["P_B_3"],
-                callback_data=f"MusicStream {videoid}|{user_id}|v|{channel}|{fplay}",
-            )
+                text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/BWF_MUSIC1"
+            ),
         ],
         [
-            InlineKeyboardButton(
-                text="🥀 ᴏᴡɴᴇʀ 🥀", url=f"tg://openmessage?user_id={OWNER_ID}",
+           InlineKeyboardButton(
+                text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/L2R_KING"
             ),
-            InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ 🥀", url=SUPPORT_CHAT,
+           InlineKeyboardButton(
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=f"https://t.me/L2R_KING"
             )
         ],
         [
