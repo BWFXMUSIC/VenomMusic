@@ -78,7 +78,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text="🌼 ᴘʟᴀʏʟɪsᴛs",
-                callback_data=f"add_playlist {videoid}",
+                url=f"https://t.me/akki_203"
             ),
             InlineKeyboardButton(
                 text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/akki_203"
@@ -89,7 +89,7 @@ def stream_markup_timer(_, chat_id, played, dur):
                 text="💮︎ ᴄᴘᴀɴɴᴇʟ", url=f"https://t.me/akki_203"
             ),
            InlineKeyboardButton(
-                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=config.SUPPORT_CHAT,
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=f"https://t.me/akki_203"
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -109,7 +109,7 @@ def stream_markup(_, chat_id):
         [
             InlineKeyboardButton(
                 text="🌼 ᴘʟᴀʏʟɪsᴛs",
-                callback_data=f"add_playlist {videoid}",
+                url=f"https://t.me/akki_203"
             ),
             InlineKeyboardButton(
                 text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/akki_203"
@@ -120,7 +120,7 @@ def stream_markup(_, chat_id):
                 text="💮︎ ᴄᴘᴀɴɴᴇʟ", url=f"https://t.me/akki_203"
             ),
            InlineKeyboardButton(
-                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=config.SUPPORT_CHAT,
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=f"https://t.me/akki_203"
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
