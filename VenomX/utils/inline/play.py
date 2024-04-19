@@ -81,7 +81,7 @@ def stream_markup_timer(_, chat_id, played, dur):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/akki_203"
+                text="✨ 𝐎ωиєя ⏎", url=f"tg://openmessage?user_id={OWNER_ID}",
             ),
         ],
         [
@@ -116,7 +116,7 @@ def stream_markup(_, chat_id):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/akki_203"
+                text="✨ 𝐎ωиєя ⏎", url=f"tg://openmessage?user_id={OWNER_ID}",
             ),
         ],
         [
