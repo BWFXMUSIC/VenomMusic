@@ -118,10 +118,8 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
-            ),
-            InlineKeyboardButton(text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=f"https://t.me/BWF_MUSIC1"),
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [InlineKeyboardButton(text=_["⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️"], url=f"https://t.me/BWF_MUSIC1"),
     ]
     return buttons
 
