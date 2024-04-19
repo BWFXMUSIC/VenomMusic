@@ -1,8 +1,9 @@
 import math
-from config import SUPPORT_CHAT, OWNER_ID
-from pyrogram.types import InlineKeyboardButton
 
-from VenomX.utils.formatters import time_to_seconds
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
+import config
+from Romeo.utils.formatters import time_to_seconds
 
 ## After Edits with Timer Bar
 
