@@ -10,8 +10,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🌼 ᴘʟᴀʏʟɪsᴛs",
-                text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/Apjijann"
+                text="🌼 ᴘʟᴀʏʟɪsᴛs" url=f"https://t.me/BWF_MUSIC1"
             ),
             InlineKeyboardButton(
                 text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/BWF_MUSIC1"
@@ -76,8 +75,7 @@ def stream_markup_timer(_, chat_id, played, dur):
             ],
         [
             InlineKeyboardButton(
-                text="🌼 ᴘʟᴀʏʟɪsᴛs",
-                text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/Apjijann"
+                text="🌼 ᴘʟᴀʏʟɪsᴛs" url=f"https://t.me/BWF_MUSIC1"
             ),
             InlineKeyboardButton(
                 text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/BWF_MUSIC1"
@@ -108,8 +106,7 @@ def stream_markup(_, chat_id):
             ],
         [
             InlineKeyboardButton(
-                text="🌼 ᴘʟᴀʏʟɪsᴛs",
-                text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/L2R_KING"
+                text="🌼 ᴘʟᴀʏʟɪsᴛs" url=f"https://t.me/BWF_MUSIC1"
             ),
             InlineKeyboardButton(
                 text="✨ 𝐎ωиєя ⏎", url=f"tg://openmessage?user_id={OWNER_ID}",
