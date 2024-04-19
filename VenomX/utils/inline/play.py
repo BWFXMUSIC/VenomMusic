@@ -98,21 +98,6 @@ def stream_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="",
-                callback_data=f"ADMIN Pause|{chat_id}",
-            ),
-            InlineKeyboardButton(
-                text="", callback_data=f"ADMIN Resume|{chat_id}"
-            ),
-            InlineKeyboardButton(
-                text="", callback_data=f"ADMIN Skip|{chat_id}"
-            ),
-            InlineKeyboardButton(
-                text="", callback_data=f"ADMIN Stop|{chat_id}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
                 text=_["PL_B_2"],
                 text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/L2R_KING"
             ),
