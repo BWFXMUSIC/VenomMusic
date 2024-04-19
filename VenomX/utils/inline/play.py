@@ -86,7 +86,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
+                text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/L2R_KING"
             ),
             InlineKeyboardButton(
                 text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/L2R_KING"
@@ -95,7 +95,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
-                callback_data=f"PanelMarkup None|{chat_id}",
+                text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/L2R_KING"
             ),
             InlineKeyboardButton(text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=f"https://t.me/BWF_MUSIC1"),
         ],
@@ -129,7 +129,7 @@ def stream_markup(_, chat_id):
         [
             InlineKeyboardButton(
                 text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
+                text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/L2R_KING"
             ),
             InlineKeyboardButton(
                 text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/L2R_KING"
@@ -138,7 +138,7 @@ def stream_markup(_, chat_id):
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
-                callback_data=f"PanelMarkup None|{chat_id}",
+                text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/L2R_KING"
             ),
             InlineKeyboardButton(text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=f"https://t.me/BWF_MUSIC1"),
         ],
