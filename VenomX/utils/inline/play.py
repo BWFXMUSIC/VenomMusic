@@ -10,11 +10,11 @@ def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["P_B_1"],
+                text=_["P_B_2"],
                 callback_data=f"MusicStream {videoid}|{user_id}|a|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
-                text=_["P_B_2"],
+                text=_["P_B_3"],
                 callback_data=f"MusicStream {videoid}|{user_id}|v|{channel}|{fplay}",
             )
         ],
@@ -86,7 +86,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
         [
            InlineKeyboardButton(
-                text="💮︎ ᴄᴘᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL,
+                text="💮︎ ᴄᴘᴀɴɴᴇʟ", url=f"https://t.me/akki_203"
             ),
            InlineKeyboardButton(
                 text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=config.SUPPORT_CHAT,
@@ -117,7 +117,7 @@ def stream_markup(_, chat_id):
         ],
         [
            InlineKeyboardButton(
-                text="💮︎ ᴄᴘᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL,
+                text="💮︎ ᴄᴘᴀɴɴᴇʟ", url=f"https://t.me/akki_203"
             ),
            InlineKeyboardButton(
                 text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=config.SUPPORT_CHAT,
