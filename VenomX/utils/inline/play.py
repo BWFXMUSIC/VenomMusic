@@ -9,7 +9,7 @@ from VenomX.utils.formatters import time_to_seconds
 def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
         [
-            InlineKeyboardButton(
+              InlineKeyboardButton(
                 text="🌼 ᴘʟᴀʏʟɪsᴛs" url=f"https://t.me/BWF_MUSIC1"
             ),
             InlineKeyboardButton(
@@ -22,14 +22,10 @@ def track_markup(_, videoid, user_id, channel, fplay):
             ),
            InlineKeyboardButton(
                 text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=f"https://t.me/L2R_KING"
-            )
+            ),
         ],
         [
-            InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
-                callback_data=f"forceclose {videoid}|{user_id}",
-            )
-        ],
+            [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
 
