@@ -89,7 +89,7 @@ def stream_markup_timer(_, chat_id, played, dur):
                 text="💮︎ ᴄᴘᴀɴɴᴇʟ", url=f"https://t.me/akki_203"
             ),
            InlineKeyboardButton(
-                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=config.SUPPORT_GROUP,
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=config.SUPPORT_CHAT,
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -120,7 +120,7 @@ def stream_markup(_, chat_id):
                 text="💮︎ ᴄᴘᴀɴɴᴇʟ", url=f"https://t.me/akki_203"
             ),
            InlineKeyboardButton(
-                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=config.SUPPORT_GROUP,
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=config.SUPPORT_CHAT,
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
