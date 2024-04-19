@@ -8,13 +8,13 @@ from VenomX.utils.formatters import time_to_seconds
 
 def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
-      [
+        [
             InlineKeyboardButton(
-                text=_["P_B_2"],
+                text=_["P_B_1"],
                 callback_data=f"MusicStream {videoid}|{user_id}|a|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
-                text=_["P_B_3"],
+                text=_["P_B_2"],
                 callback_data=f"MusicStream {videoid}|{user_id}|v|{channel}|{fplay}",
             )
         ],
@@ -63,26 +63,39 @@ def stream_markup_timer(_, chat_id, played, dur):
         bar = "—————————◉"
     buttons = [
         [
+            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+        ],
+        [
             InlineKeyboardButton(
                 text=f"{played} {bar} {dur}",
                 callback_data="GetTimer",
             )
+            ],
+        [
+            InlineKeyboardButton(
+                text="🌼 ᴘʟᴀʏʟɪsᴛs",
+                callback_data=f"add_playlist {videoid}",
+            ),
+            InlineKeyboardButton(
+                text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/akki_203"
+            ),
+        ],
+        [
+           InlineKeyboardButton(
+                text="💮︎ ᴄᴘᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL,
+            ),
+           InlineKeyboardButton(
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=config.SUPPORT_CHAT,
+            ),
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_2"],
-                text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/L2R_KING"
-            ),
-            InlineKeyboardButton(
-                text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/L2R_KING"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_3"],
-                text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/L2R_KING"
-            ),
-            InlineKeyboardButton(text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=f"https://t.me/BWF_MUSIC1"),
+                text="", callback_data="close"
+            )
         ],
     ]
     return buttons
@@ -91,26 +104,33 @@ def stream_markup_timer(_, chat_id, played, dur):
 def stream_markup(_, chat_id):
     buttons = [
         [
+            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}")
+            ],
+        [
             InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
+                text="🌼 ᴘʟᴀʏʟɪsᴛs",
+                callback_data=f"add_playlist {videoid}",
+            ),
+            InlineKeyboardButton(
+                text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/akki_203"
+            ),
+        ],
+        [
+           InlineKeyboardButton(
+                text="💮︎ ᴄᴘᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL,
+            ),
+           InlineKeyboardButton(
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=config.SUPPORT_CHAT,
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="", callback_data="close"
             )
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_2"],
-                text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/L2R_KING"
-            ),
-            InlineKeyboardButton(
-                text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/L2R_KING"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_3"],
-                text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/L2R_KING"
-            ),
-            InlineKeyboardButton(text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=f"https://t.me/BWF_MUSIC1"),
         ],
     ]
     return buttons
