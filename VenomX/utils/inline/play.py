@@ -10,11 +10,11 @@ def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["P_B_1"],
+                text=_["P_B_2"],
                 callback_data=f"MusicStream {videoid}|{user_id}|a|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
-                text=_["P_B_2"],
+                text=_["P_B_3"],
                 callback_data=f"MusicStream {videoid}|{user_id}|v|{channel}|{fplay}",
             )
         ],
@@ -78,18 +78,18 @@ def stream_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text="🌼 ᴘʟᴀʏʟɪsᴛs",
-                callback_data=f"add_playlist {videoid}",
+                text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/L2R_KING"
             ),
             InlineKeyboardButton(
-                text="✨ 𝐎ωиєя ⏎", url=f"tg://openmessage?user_id={OWNER_ID}",
+                text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/BWF_MUSIC1"
             ),
         ],
         [
            InlineKeyboardButton(
-                text="💮︎ ᴄᴘᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL,
+                text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/L2R_KING"
             ),
            InlineKeyboardButton(
-                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=config.SUPPORT_CHAT,
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=f"https://t.me/L2R_KING"
             ),
         ],
         [
@@ -113,7 +113,7 @@ def stream_markup(_, chat_id):
         [
             InlineKeyboardButton(
                 text="🌼 ᴘʟᴀʏʟɪsᴛs",
-                callback_data=f"add_playlist {videoid}",
+                text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/L2R_KING"
             ),
             InlineKeyboardButton(
                 text="✨ 𝐎ωиєя ⏎", url=f"tg://openmessage?user_id={OWNER_ID}",
@@ -121,10 +121,10 @@ def stream_markup(_, chat_id):
         ],
         [
            InlineKeyboardButton(
-                text="💮︎ ᴄᴘᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL,
+                text="✨ 𝐎ωиєя ⏎" url=f"https://t.me/L2R_KING"
             ),
            InlineKeyboardButton(
-                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=config.SUPPORT_CHAT,
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️" url=f"https://t.me/L2R_KING"
             ),
         ],
         [
@@ -140,11 +140,11 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["P_B_1"],
+                text=_["P_B_2"],
                 callback_data=f"AyushPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
-                text=_["P_B_2"],
+                text=_["P_B_3"],
                 callback_data=f"AyushPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
             ),
         ],
@@ -181,11 +181,11 @@ def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["P_B_1"],
+                text=_["P_B_2"],
                 callback_data=f"MusicStream {videoid}|{user_id}|a|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
-                text=_["P_B_2"],
+                text=_["P_B_3"],
                 callback_data=f"MusicStream {videoid}|{user_id}|v|{channel}|{fplay}",
             ),
         ],
