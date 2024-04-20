@@ -81,7 +81,7 @@ def stream_markup_timer(_, chat_id, played, dur):
                 url=f"https://t.me/L2R_KING"
             ),
             InlineKeyboardButton(
-                text="✨ 𝐎ωиєя ⏎", 
+                text="✨ 𝐎ωиєя ⏎"
             ),
         ],
         [
@@ -112,7 +112,7 @@ def stream_markup(_, chat_id):
                 url=f"https://t.me/L2R_KING"
             ),
             InlineKeyboardButton(
-                text="✨ 𝐎ωиєя ⏎", 
+                text="✨ 𝐎ωиєя ⏎"
             ),
         ],
         [
