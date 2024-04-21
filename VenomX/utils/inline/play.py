@@ -77,8 +77,7 @@ def stream_markup_timer(_, chat_id, played, dur):
             ],
         [
             InlineKeyboardButton(
-                text="🌼 ᴘʟᴀʏʟɪsᴛs", 
-                url=f"https://t.me/L2R_KING"
+                text="🌼 ᴘʟᴀʏʟɪsᴛs", callback_data=f"ADMIN Replay|{chat_id}"),
             ),
             InlineKeyboardButton(
                 text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/ALL_QUIZ_TAME"
