@@ -76,15 +76,15 @@ def stream_markup_timer(_, chat_id, played, dur):
             )
             ],
         [
-            InlineKeyboardButton(text="🥰[↻]🥰", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="🌼 ᴘʟᴀʏʟɪsᴛs", callback_data=f"ADMIN Replay|{chat_id}"),
             InlineKeyboardButton(
-                text="🥰[sᴜᴘᴘᴏʀᴛ]🥰", url=f"https://t.me/ALL_QUIZ_TAME"
+                text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/L2R_KING"
             ),
         ],
         [
-            InlineKeyboardButton(text="🥰[↻]🥰", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="💮︎ ᴄᴘᴀɴɴᴇʟ", callback_data=f"ADMIN Replay|{chat_id}"),
             InlineKeyboardButton(
-                text="🥰[sᴜᴘᴘᴏʀᴛ]🥰", url=SUPPORT_CHAT,
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=SUPPORT_CHAT,
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
