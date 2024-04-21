@@ -9,21 +9,9 @@ def start_panel(_):
         [
             InlineKeyboardButton(
                 text="𝐇𝐞𝐥𝐩 & 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬",
-                url=f"https://t.me/{BOT_USERNAME}?start=help",
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text="⚙ 𝐁𝐨𝐭 𝐒𝐞𝐭𝐭𝐢𝐧𝐠 ⚙", callback_data="settings_helper"
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text="💬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url=config.SUPPORT_CHAT
+                url=f"https://t.me/{app.username}?startgroup=true"
             ),
-            InlineKeyboardButton(
-                text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬 📡", url=config.SUPPORT_CHANNEL
-            )
+            InlineKeyboardButton(text="💬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭",url=config.SUPPORT_CHAT),
         ],
     ]
     return buttons
@@ -39,10 +27,10 @@ def private_panel(_):
         ],
         [
             InlineKeyboardButton(
-                text="📨 ᴄʜᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL
+                text="📨 ᴄʜᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL),
             ),
             InlineKeyboardButton(
-                text="📨 sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_CHAT
+                text="📨 sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_CHAT),
             )
         ],
         [
