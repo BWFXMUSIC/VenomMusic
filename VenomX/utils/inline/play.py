@@ -82,8 +82,7 @@ def stream_markup_timer(_, chat_id, played, dur):
             ),
         ],
         [
-           InlineKeyboardButton(
-                text="🥰[↻]🥰", callback_data=f"ADMIN Replay|{chat_id}"),
+           InlineKeyboardButton(text="🥰[↻]🥰", callback_data=f"ADMIN Replay|{chat_id}"),
             ),
            InlineKeyboardButton(
                 text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=SUPPORT_CHAT,
