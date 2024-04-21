@@ -8,10 +8,9 @@ def start_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="𝐇𝐞𝐥𝐩 & 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬",
-                url=f"https://t.me/{app.username}?startgroup=true"
+                text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true"
             ),
-            InlineKeyboardButton(text="💬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭",url=config.SUPPORT_CHAT),
+            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
         ],
     ]
     return buttons
