@@ -29,7 +29,7 @@ def private_panel(_):
                 text="📨 ᴄʜᴀɴɴᴇʟ", url=config.SUPPORT_CHAT),
             ),
             InlineKeyboardButton(
-                text="📨 sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_CHAT),
+                text="📨 sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_CHANNEL),
             )
         ],
         [
