@@ -8,22 +8,9 @@ def start_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="𝐇𝐞𝐥𝐩 & 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬",
-                url=f"https://t.me/{BOT_USERNAME}?start=help",
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text="⚙ 𝐁𝐨𝐭 𝐒𝐞𝐭𝐭𝐢𝐧𝐠 ⚙", callback_data="settings_helper"
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text="💬 𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url=config.SUPPORT_GROUP
+                text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true"
             ),
-            InlineKeyboardButton(
-                text="𝐔𝐩𝐝𝐚𝐭𝐞𝐬 📡", url=config.SUPPORT_CHANNEL
-            )
+            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
         ],
     ]
     return buttons
@@ -31,37 +18,20 @@ def start_panel(_):
 
 def private_panel(_):
     buttons = [
-        [
-            InlineKeyboardButton(
+        InlineKeyboardButton(
                 text="🔎 ʜᴇʟᴩ 🔎",
-                callback_data="settings_back_helper",
+                callback_data="settings_back_helper")],
             )
         ],
         [
-            InlineKeyboardButton(
-                text="📨 ᴄʜᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL
-            ),
-            InlineKeyboardButton(
-                text="📨 sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_CHAT
-            )
+        [InlineKeyboardButton(text=_["𝐇𝐞𝐥𝐩 & 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬"], url=f"https://t.me/{app.username}?startgroup=true",
+        [
+            InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
+            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_CHAT),
         ],
         [
-            InlineKeyboardButton(
-                text="⛩️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⛩️",
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-            )
+            InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
+            InlineKeyboardButton(text=_["S_B_7"], url=config.UPSTREAM_REPO),
         ],
-        [
-            InlineKeyboardButton(
-                text="🔥 ᴏᴡɴᴇʀ 🔥",
-                user_id=OWNER,
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text="🇮🇳 ʟᴀɴɢᴜᴀɢᴇ 🏳️‍🌈",
-                callback_data="LG"
-            )
-        ]
-     ]
+    ]
     return buttons
