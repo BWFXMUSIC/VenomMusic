@@ -178,7 +178,7 @@ stream_1 : "» sᴛᴀʀᴛᴇᴅ ᴩʟᴀʏɪɴɢ: «\n\n💖 ʀᴇǫᴜᴇsᴛ
 stream_2 : "» sᴛᴀʀᴛᴇᴅ ᴩʟᴀʏɪɴɢ: « «\n\n💌 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ: {0} "
 
 
-CLOSE_BUTTON  : "ᴄʟᴏsᴇ"
+CLOSE_BUTTON  : ""
 BACK_BUTTON : "ʙᴀᴄᴋ"
 
 S_B_1 : "Aᴅᴅ ᴍᴇ"
