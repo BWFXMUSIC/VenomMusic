@@ -26,10 +26,10 @@ def private_panel(_):
         ],
         [
             InlineKeyboardButton(
-                text="📨 ᴄʜᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL
+                text="📨 ᴄʜᴀɴɴᴇʟ", url=config.SUPPORT_CHAT),
             ),
             InlineKeyboardButton(
-                text="📨 sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_GROUP
+                text="📨 sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_CHAT),
             )
         ],
         [
