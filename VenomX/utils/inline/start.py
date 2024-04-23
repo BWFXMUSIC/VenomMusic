@@ -26,10 +26,10 @@ def private_panel(_):
         ],
         [
             InlineKeyboardButton(
-                text="📨 ᴄʜᴀɴɴᴇʟ", url=config.SUPPORT_CHAT),
+                text="📨 ᴄʜᴀɴɴᴇʟ", url=config.SUPPORT_CHANNEL
             ),
             InlineKeyboardButton(
-                text="📨 sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_CHANNEL),
+                text="📨 sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_CHAT
             )
         ],
         [
@@ -48,6 +48,7 @@ def private_panel(_):
             InlineKeyboardButton(
                 text="🇮🇳 ʟᴀɴɢᴜᴀɢᴇ 🏳️‍🌈",
                 callback_data="LG"
-        ],
-    ]
+            )
+        ]
+     ]
     return buttons
