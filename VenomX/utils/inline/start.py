@@ -23,7 +23,6 @@ def private_panel(_):
                 callback_data="settings_back_helper")],
             )
         ],
-        [
         [InlineKeyboardButton(text=_["𝐇𝐞𝐥𝐩 & 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬"], url=f"https://t.me/{app.username}?startgroup=true",
         [
             InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
