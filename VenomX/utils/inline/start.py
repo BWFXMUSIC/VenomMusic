@@ -38,7 +38,7 @@ def private_panel(_):
             InlineKeyboardButton(text="🔥 ᴏᴡɴᴇʀ 🔥", user_id=config.OWNER_ID),
         ],
         [
-            InlineKeyboardButton(text="🇮🇳 ʟᴀɴɢᴜᴀɢᴇ 🏳️‍🌈", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="🇮🇳 ʟᴀɴɢᴜᴀɢᴇ 🏳️‍🌈", callback_data="bot_info_data"),
         ],
     ]
     return buttons
