@@ -2,7 +2,7 @@ from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from VenomX import app as bot
 import requests
-from config import 
+from config import OWNER_ID
 from VenomX.utils.errors import capture_err
 
 start_txt = """**
