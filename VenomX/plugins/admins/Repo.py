@@ -2,7 +2,7 @@ from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from VenomX import app as bot
 import requests
-from config import BOT_USERNAME
+from config import 
 from VenomX.utils.errors import capture_err
 
 start_txt = """**
@@ -21,7 +21,7 @@ start_txt = """**
 async def start(_, msg):
     buttons = [
         [ 
-          InlineKeyboardButton("⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+          InlineKeyboardButton("⦿ ᴀᴅᴅ ᴍᴇ ⦿", url="https://t.me/BWF_MUSIC1"),
         ],
         [
           InlineKeyboardButton("⛩️ʜᴇʟᴘ🦋", url="https://t.me/BWF_MUSIC1"),
