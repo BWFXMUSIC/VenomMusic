@@ -94,10 +94,7 @@ TAGMES = [ " **✨बहुत अच्छा लगता है तुझे 
            " **❅ आप की दोस्त से मेरी सेटिंग करा दो ..? 🙃** ",
            " **❅ सारा काम हो गया हो तो ऑनलाइन आ जाओ।..? 🙃** ",
            " **❅ कहा से हो आप 😊** ",
-           ]
-
-BWF_TAG = [
-           " **🍷जिन लड़कियों ने मुझे माना किया है.....👁** ",
+            " **🍷जिन लड़कियों ने मुझे माना किया है.....👁** ",
            " **🦋उनकी माँ बाप को फ़ोन करके.....💨** ",
            " **🙊उनकी @SHAYRI_CHANNEL1 लोकेशन बताऊँगा👻** ",
            " **💔👑🌷मालूम होती फ़ितर तुम्हारी तो हम इतना इश्क़ नहीं करते🍃🥀💌** ",
@@ -109,14 +106,13 @@ BWF_TAG = [
            " **🍷बहुत उदास है कोई तेरे जाने से 👻** ",
            " **❣️हो सके तो लौट आ किसी बहाने से🦋** ",
            " **🍃तू लाख खफा सही, मगर एक बार तो देख 👑** ",
-        ]
+           ]
 
-
-@app.on_message(filters.command(["Shayaritag", "Lovetag", "Pyartag", "shaaditag", "tagall", "all", ], prefixes=["/", "@", "#"]))
+@app.on_message(filters.command(["tagall", "all", "tagmember"], prefixes=["/", "@", "#"]))
 async def mentionall(client, message):
     chat_id = message.chat.id
     if message.chat.type == ChatType.PRIVATE:
-        return await message.reply("𝐓𝐡𝐢𝐬 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐎𝐧𝐥𝐲 𝐅𝐨𝐫 𝐆𝐫𝐨𝐮𝐩𝐬.")
+        return await message.reply("This command can be used in groups and channels!")
 
     is_admin = False
     try:
@@ -130,10 +126,10 @@ async def mentionall(client, message):
         ):
             is_admin = True
     if not is_admin:
-        return await message.reply("𝐘𝐨𝐮 𝐀𝐫𝐞 𝐍𝐨𝐭 𝐀𝐝𝐦𝐢𝐧 𝐁𝐚𝐛𝐲, 𝐎𝐧𝐥𝐲 𝐀𝐝𝐦𝐢𝐧𝐬 𝐂𝐚𝐧 𝐓𝐚𝐠 𝐌𝐞𝐦𝐛𝐞𝐫𝐬. ")
+        return await message.reply("Only admin can use this command! . ")
 
     if message.reply_to_message and message.text:
-        return await message.reply("/Hinditag ༄𝐿 2 𝙍.🖤🜲𝐊𝐈𝐍𝐆❦︎ 𝆺𝅥⃝🍷...")
+        return await message.reply("/tagall  𝐓𝐲𝐩𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬 / 𝐑𝐞𝐩𝐥𝐲 𝐀𝐧𝐲 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐍𝐞𝐱𝐭 𝐓𝐢𝐦𝐞 ")
     elif message.text:
         mode = "text_on_cmd"
         msg = message.text
@@ -141,11 +137,11 @@ async def mentionall(client, message):
         mode = "text_on_reply"
         msg = message.reply_to_message
         if not msg:
-            return await message.reply("/Shayaritag ༄𝐿 2 𝙍.🖤🜲𝐊𝐈𝐍𝐆❦︎ 𝆺𝅥⃝🍷...")
+            return await message.reply("/tagall 👈 Try this or reply any message ...")
     else:
-        return await message.reply("/Shayaritag ༄𝐿 2 𝙍.🖤🜲𝐊𝐈𝐍𝐆❦︎ 𝆺𝅥⃝🍷𝐠...")
+        return await message.reply("/tagall 👈 Try this or reply any message ..")
     if chat_id in spam_chats:
-        return await message.reply("𝐏𝐥𝐞𝐚𝐬𝐞 𝐀𝐭 𝐅𝐢𝐫𝐬𝐭 𝐒𝐭𝐨𝐩 𝐑𝐮𝐧𝐧𝐢𝐧𝐠 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 ...")
+        return await message.reply("𝐏𝐥𝐞𝐚𝐬𝐞 𝐀𝐭 𝐅𝐢𝐫𝐬𝐭 𝐒𝐭𝐨𝐩 𝐑𝐮𝐧𝐧𝐢𝐧𝐠 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 ...")
     spam_chats.append(chat_id)
     usrnum = 0
     usrtxt = ""
@@ -171,56 +167,10 @@ async def mentionall(client, message):
     except:
         pass
 
-
-@app.on_message(filters.command(["vctag"], prefixes=["/", "@", "#"]))
-async def mention_allvc(client, message):
-    chat_id = message.chat.id
-    if message.chat.type == ChatType.PRIVATE:
-        return await message.reply("𝐓𝐡𝐢𝐬 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐎𝐧𝐥𝐲 𝐅𝐨𝐫 𝐆𝐫𝐨𝐮𝐩𝐬.")
-
-    is_admin = False
-    try:
-        participant = await client.get_chat_member(chat_id, message.from_user.id)
-    except UserNotParticipant:
-        is_admin = False
-    else:
-        if participant.status in (
-            ChatMemberStatus.ADMINISTRATOR,
-            ChatMemberStatus.OWNER
-        ):
-            is_admin = True
-    if not is_admin:
-        return await message.reply("𝐘𝐨𝐮 𝐀𝐫𝐞 𝐍𝐨𝐭 𝐀𝐝𝐦𝐢𝐧 𝐁𝐚𝐛𝐲, 𝐎𝐧𝐥𝐲 𝐀𝐝𝐦𝐢𝐧𝐬 𝐂𝐚𝐧 𝐓𝐚𝐠 𝐌𝐞𝐦𝐛𝐞𝐫𝐬. ")
-    if chat_id in spam_chats:
-        return await message.reply("𝐏𝐥𝐞𝐚𝐬𝐞 𝐀𝐭 𝐅𝐢𝐫𝐬𝐭 𝐒𝐭𝐨𝐩 𝐑𝐮𝐧𝐧𝐢𝐧𝐠 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 ...")
-    spam_chats.append(chat_id)
-    usrnum = 0
-    usrtxt = ""
-    async for usr in client.get_chat_members(chat_id):
-        if not chat_id in spam_chats:
-            break
-        if usr.user.is_bot:
-            continue
-        usrnum += 1
-        usrtxt += f"[{usr.user.first_name}](tg://user?id={usr.user.id}) "
-
-        if usrnum == 1:
-            txt = f"{usrtxt} {random.choice(VC_TAG)}"
-            await client.send_message(chat_id, txt)
-            await asyncio.sleep(4)
-            usrnum = 0
-            usrtxt = ""
-    try:
-        spam_chats.remove(chat_id)
-    except:
-        pass
-
-
-
-@app.on_message(filters.command(["cancel", "offtag", "Shayariofftag", "lovetag", "off", "offtag", "stop"]))
+@app.on_message(filters.command(["cancel", "stop"]))
 async def cancel_spam(client, message):
     if not message.chat.id in spam_chats:
-        return await message.reply("𝐂𝐮𝐫𝐫𝐞𝐧𝐭𝐥𝐲 𝐈'𝐦 𝐍𝐨𝐭 𝐓𝐚𝐠𝐠𝐢𝐧𝐠 𝐁𝐚𝐛𝐲.")
+        return await message.reply("No active mention process is started by me.")
     is_admin = False
     try:
         participant = await client.get_chat_member(message.chat.id, message.from_user.id)
@@ -233,10 +183,10 @@ async def cancel_spam(client, message):
         ):
             is_admin = True
     if not is_admin:
-        return await message.reply("𝐘𝐨𝐮 𝐀𝐫𝐞 𝐍𝐨𝐭 𝐀𝐝𝐦𝐢𝐧 𝐁𝐚𝐛𝐲, 𝐎𝐧𝐥𝐲 𝐀𝐝𝐦𝐢𝐧𝐬 𝐂𝐚𝐧 𝐓𝐚𝐠 𝐌𝐞𝐦𝐛𝐞𝐫𝐬.")
+        return await message.reply("This command is only for admins. You can't use this command.")
     else:
         try:
             spam_chats.remove(message.chat.id)
         except:
             pass
-        return await message.reply("♦ ≛ 🄸🥂Gʀᴏᴜᴘꨄ︎[•ʙω͠ғ•]™✺🕊️⃝🔥 ♦")
+        return await message.reply("♦ Mention process stopped ♦")
