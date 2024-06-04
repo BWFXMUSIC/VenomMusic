@@ -3,7 +3,7 @@ from requests import get
 from VenomX import app
 from pyrogram import filters
 from pyrogram.types import InputMediaPhoto
-
+### ❖ ➥ 𝗕𝐖𝗙™🇮🇳
 @app.on_message(filters.command(["L2Rimage", "BWFimg" ,"L2RKING" ,"BWF"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]))
 async def pinterest(_, message):
      chat_id = message.chat.id
