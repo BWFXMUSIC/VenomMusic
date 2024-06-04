@@ -22,6 +22,8 @@ spotipy
 requests
 tgcrypto
 unidecode
-yt-dlp
+yt-dlp==2023.10.13
 youtube-search
 youtube-search-python
+pornhub-api==0.3.0
+telegraph
