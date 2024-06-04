@@ -1,9 +1,9 @@
 import requests
 from requests import get 
-from VenomX import app
+from Romeo import app
 from pyrogram import filters
 from pyrogram.types import InputMediaPhoto
-### ❖ ➥ 𝗕𝐖𝗙™🇮🇳
+
 @app.on_message(filters.command(["L2Rimage", "BWFimg" ,"L2RKING" ,"BWF"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]))
 async def pinterest(_, message):
      chat_id = message.chat.id
@@ -16,7 +16,7 @@ async def pinterest(_, message):
      images = get(f"https://pinterest-api-one.vercel.app/?q={query}").json()
 
      media_group = []
-     count = 0  
+     count = 0
 
      msg = await message.reply(f"sᴄʀᴀᴘɪɴɢ ɪᴍᴀɢᴇs ғʀᴏᴍ ᴘɪɴᴛᴇʀᴇᴛs...")
      for url in images["images"][:8]:
