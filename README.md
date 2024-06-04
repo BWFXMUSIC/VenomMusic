@@ -9,7 +9,7 @@
   <img src="https://te.legra.ph/file/754e95311eccb48b7aafc.jpg">
 </p>
 
-<p align="center">
+<p align="center"> 
 <a href="https://github.com/venombolteop/VenomMusic/stargazers"> <img src="https://img.shields.io/github/stars/venombolteop/VenomMusic?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
 <a href="https://github.com/venombolteop/VenomMusic/network/members"> <img src="https://img.shields.io/github/forks/venombolteop/VenomMusic?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
 <a href="https://github.com/venombolteop/VenomMusic/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
