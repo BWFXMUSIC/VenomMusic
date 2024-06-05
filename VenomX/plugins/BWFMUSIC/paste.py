@@ -1,6 +1,6 @@
 from asyncio import get_running_loop, sleep, TimeoutError
 from functools import partial
-from VenomX import app
+from Romeo import app
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiohttp import ClientSession
@@ -18,7 +18,7 @@ async def make_carbon(code):
         async with session.post(url, json={"code": code}) as resp:
             image = BytesIO(await resp.read())
     image.name = "carbon.png"
-    return image
+    return image   ### ❖ ➥ 𝗕𝐖𝗙 𝗠𝗨𝗦𝗜𝗖™🇮🇳
     
 aiohttpsession = ClientSession()
 
@@ -34,7 +34,7 @@ def _netcat(host, port, content):
         if not data:
             break
         return data
-    s.close()
+    s.close()                                 ### ❖ ➥ 𝗕𝐖𝗙 𝗠𝗨𝗦𝗜𝗖™🇮🇳
 
 async def paste(content):
     loop = get_running_loop()
@@ -55,12 +55,12 @@ async def isPreviewUp(preview: str) -> bool:
             return status == 200
     return False
 
-@app.on_message(filters.command("paste"))
+@app.on_message(filters.command("paste"))      ### ❖ ➥ 𝗕𝐖𝗙 𝗠𝗨𝗦𝗜𝗖™🇮🇳
 async def paste_func(_, message):
     if not message.reply_to_message:
         return await message.reply_text("**ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴡɪᴛʜ /L2RPaste /paste**")
 
-    m = await message.reply_text("**ᴘᴀsᴛɪɴɢ ᴘʟs ᴡᴀɪᴛ 10 sᴇᴄ....**")
+    m = await message.reply_text("**⛩️ʙω͠ғ🥀ᴘᴀsᴛᴇᴅ ᴘᴀɢᴇ ⛩️....**")
 
     if message.reply_to_message.text:
         content = str(message.reply_to_message.text)
@@ -87,11 +87,11 @@ async def paste_func(_, message):
             carbon = await make_carbon(content_chunk)
 
             await m.delete()
-            text = await message.reply("**✍️ᴘᴀsᴛᴇᴅ ᴏɴ ᴄᴀʀʙᴏɴ ᴘᴀɢᴇ !**")
+            text = await message.reply("**⛩️ʙω͠ғ🥀ᴘᴀsᴛᴇᴅ ᴘᴀɢᴇ ⛩️**")
             await asyncio.sleep(0.4)
-            await text.edit("**ᴜᴘʟᴏᴀᴅɪɴɢ ᴜɴᴅᴇʀ 5 sᴇᴄ.**")
+            await text.edit("**⛩️ʙω͠ғ🥀ᴘᴀsᴛᴇᴅ ᴘᴀɢᴇ ⛩️.**")
             await asyncio.sleep(0.4)
-            await text.edit("**ᴜᴘʟᴏᴀᴅɪɴɢ ᴜɴᴅᴇʀ 5 sᴇᴄ....**")
+            await text.edit("**⛩️ʙω͠ғ🥀ᴘᴀsᴛᴇᴅ ᴘᴀɢᴇ ⛩️....**")
             caption = f"🥀ᴛʜɪs ɪs  {page_number} ᴘᴀɢᴇ - {current_line + 1} to {end_line} ʟɪɴᴇs..\n sᴇɴᴅɪɴɢ ᴍᴏʀᴇ ʟɪɴᴇs ɪғ ʜᴀᴠᴇ ᴏɴ ɴᴇxᴛ ᴘᴀɢᴇ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ..."
             await message.reply_photo(carbon, caption=caption)
             await text.delete()
@@ -102,4 +102,4 @@ async def paste_func(_, message):
             await sleep(1)  # Optional: Add a sleep to avoid rate limiting or being blocked
 
     else:
-        await m.edit("**Unsupported file type. Only text files can be pasted.**")
+        await m.edit("**Unsupported file type. Only text files can be L2RPaste pasted.**")
