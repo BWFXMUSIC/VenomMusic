@@ -22,9 +22,11 @@ spotipy
 requests
 tgcrypto
 unidecode
-yt-dlp==2023.10.13
+yt-dlp
+git+https://github.com/yt-dlp/yt-dlp
 youtube-search
 youtube-search-python
+wget
 pornhub-api==0.3.0
 telegraph
 git+https://github.com/AsmSafone/SafoneAPI
