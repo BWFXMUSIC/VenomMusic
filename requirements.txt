@@ -29,4 +29,3 @@ youtube-search-python
 wget
 pornhub-api==0.3.0
 telegraph
-git+https://github.com/AsmSafone/SafoneAPI
