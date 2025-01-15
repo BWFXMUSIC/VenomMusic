@@ -21,7 +21,7 @@ async def ul(_, message):
             # Send the link back to the user
             await i.edit(f'💌ʙω͠ғ™ ʟɪɴᴋ ɪᴍᴀɢᴇs🦋 {url}')
         except Exception as e:
-            await i.edit(f"**Error uploading the image to Telegraph.**\nError: {str(e)}")
+            await i.edit(f"Error uploading the image to Telegraph.\nError: {str(e)}")
         finally:
             # Clean up the downloaded file
             os.remove(path)
@@ -31,7 +31,7 @@ async def ul(_, message):
     reply = message.reply_to_message
     if reply and reply.media:
         if not reply.photo:  # Check if the media is a photo or image
-            return await message.reply("**ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ᴡᴏʀᴋs ᴡɪᴛʜ ɪᴍᴀɢᴇs.**")
+            return await message.reply("ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ᴡᴏʀᴋs ᴡɪᴛʜ ɪᴍᴀɢᴇs.")
         
         i = await message.reply("💌ʙω͠ғ™ ɪᴍᴀɢᴇs🦋")
         path = await reply.download()  # Download the file
@@ -44,7 +44,7 @@ async def ul(_, message):
             # Send the link back to the user
             await i.edit(f'💌ʙω͠ғ™ ʟɪɴᴋ ɪᴍᴀɢᴇs🦋 {url}')
         except Exception as e:
-            await i.edit(f"**Error uploading the image to Graph.org.**\nError: {str(e)}")
+            await i.edit(f"Error uploading the image to Graph.org.\nError: {str(e)}")
         finally:
             # Clean up the downloaded file
             os.remove(path)
