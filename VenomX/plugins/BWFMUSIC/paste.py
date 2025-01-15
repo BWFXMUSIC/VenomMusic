@@ -18,8 +18,8 @@ async def make_carbon(code):
         async with session.post(url, json={"code": code}) as resp:
             image = BytesIO(await resp.read())
     image.name = "carbon.png"
-    return image   ### ❖ ➥ 𝗕𝐖𝗙 𝗠𝗨𝗦𝗜𝗖™🇮🇳
-    
+    return image
+
 aiohttpsession = ClientSession()
 
 pattern = re.compile(r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$")
@@ -34,7 +34,7 @@ def _netcat(host, port, content):
         if not data:
             break
         return data
-    s.close()                                 ### ❖ ➥ 𝗕𝐖𝗙 𝗠𝗨𝗦𝗜𝗖™🇮🇳
+    s.close()
 
 async def paste(content):
     loop = get_running_loop()
@@ -55,7 +55,7 @@ async def isPreviewUp(preview: str) -> bool:
             return status == 200
     return False
 
-@app.on_message(filters.command("paste"))      ### ❖ ➥ 𝗕𝐖𝗙 𝗠𝗨𝗦𝗜𝗖™🇮🇳
+@app.on_message(filters.command("paste"))
 async def paste_func(_, message):
     if not message.reply_to_message:
         return await message.reply_text("**ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ ᴡɪᴛʜ /L2RPaste /paste**")
@@ -64,42 +64,54 @@ async def paste_func(_, message):
 
     if message.reply_to_message.text:
         content = str(message.reply_to_message.text)
+
     elif message.reply_to_message.document:
         document = message.reply_to_message.document
-        if document.file_size > 1048576:
+        if document.file_size > 1048576:  # File size limit (1MB)
             return await m.edit("**ʏᴏᴜ ᴄᴀɴ ᴏɴʟʏ ᴘᴀsᴛᴇ ғɪʟᴇs sᴍᴀʟʟᴇʀ ᴛʜᴀɴ 1ᴍʙ.**")
+        
+        # Validate if the file is of a supported type
         if not pattern.search(document.mime_type):
             return await m.edit("**ᴏɴʟʏ ᴛᴇxᴛ ғɪʟᴇs ᴄᴀɴ ʙᴇ ᴘᴀsᴛᴇᴅ.**")
 
         doc = await message.reply_to_message.download()
+
+        # Read the document content asynchronously
         async with aiofiles.open(doc, mode="r") as f:
             lines = await f.readlines()
 
-        os.remove(doc)
+        os.remove(doc)  # Clean up after downloading
 
         total_lines = len(lines)
         current_line = 0
         page_number = 1
 
+        # Split content into chunks and generate images for each page
         while current_line < total_lines:
             end_line = min(current_line + 50, total_lines)
             content_chunk = "".join(lines[current_line:end_line])
             carbon = await make_carbon(content_chunk)
 
+            # Update the user with the current progress
             await m.delete()
             text = await message.reply("**⛩️ʙω͠ғ🥀ᴘᴀsᴛᴇᴅ ᴘᴀɢᴇ ⛩️**")
             await asyncio.sleep(0.4)
             await text.edit("**⛩️ʙω͠ғ🥀ᴘᴀsᴛᴇᴅ ᴘᴀɢᴇ ⛩️.**")
             await asyncio.sleep(0.4)
             await text.edit("**⛩️ʙω͠ғ🥀ᴘᴀsᴛᴇᴅ ᴘᴀɢᴇ ⛩️....**")
+
             caption = f"🥀ᴛʜɪs ɪs  {page_number} ᴘᴀɢᴇ - {current_line + 1} to {end_line} ʟɪɴᴇs..\n sᴇɴᴅɪɴɢ ᴍᴏʀᴇ ʟɪɴᴇs ɪғ ʜᴀᴠᴇ ᴏɴ ɴᴇxᴛ ᴘᴀɢᴇ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ..."
             await message.reply_photo(carbon, caption=caption)
+
+            # Clean up the carbon image after sending
             await text.delete()
             carbon.close()
 
             current_line = end_line
             page_number += 1
-            await sleep(1)  # Optional: Add a sleep to avoid rate limiting or being blocked
+
+            # Optional: Add a delay to avoid rate limiting or excessive requests
+            await sleep(1)
 
     else:
         await m.edit("**Unsupported file type. Only text files can be L2RPaste pasted.**")
